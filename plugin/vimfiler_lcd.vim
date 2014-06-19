@@ -43,7 +43,7 @@ function! s:action.func(candidate) "{{{
             return
         endif
 
-        execute ':VimFiler'
+        execute ':VimFiler ' . a:candidate.action__directory
     endif
 endfunction "}}}
 
